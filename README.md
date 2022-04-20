@@ -1,24 +1,47 @@
-# README
+# DB設計
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## users テーブル
 
-Things you may want to cover:
+| Column              | Type   | Options                   |
+| ------------------- | ------ | ------------------------- |
+| nickname            | string | null: false               |
+| email               | string | null: false, unique: true |
+| encrypted_password  | string | null: false               |
 
-* Ruby version
 
-* System dependencies
+### Association
 
-* Configuration
+- has_many :items
+- has_many :orders
 
-* Database creation
 
-* Database initialization
+## Spendings テーブル
 
-* How to run the test suite
+| Column           | Type       | Options                   |
+| ---------------- | ---------- | ------------------------- |
+| price            | integer    | null: false               |
+| category_id      | integer    | null: false               |
+| date             | integer    | null: false               |
+| memo             | text       |                           |
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+### Association
 
-* ...
+belongs_to : user
+
+
+
+
+## budgets テーブル
+
+| Column                | Type       | Options                        |
+| --------------------- | ---------- | ------------------------------ |
+| food_expenses         | integer    | null: false                    |
+| dining_expenses       | integer    | null: false                    |
+| daily_necessities     | integer    | null: false                    |
+
+
+
+### Association
+
+belongs_to : user
