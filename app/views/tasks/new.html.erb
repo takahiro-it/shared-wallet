@@ -1,5 +1,5 @@
-<h2>買い物リストを追加</h2>
+<h2 class="title">買い物リストを追加</h2>
 <%= form_with url: "/tasks/create", local: true do |f| %>
-  <p><%= f.text_field :title %></p>
-  <p><%= f.submit "作成" %></p>
+  <p><%= f.text_field :title, class:"form-control" %></p>
+  <p><%= f.submit "作成", class:"btn btn-outline-primary" %></p>
 <% end %>

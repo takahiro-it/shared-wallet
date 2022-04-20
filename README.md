@@ -45,3 +45,15 @@ belongs_to : user
 ### Association
 
 belongs_to : user
+
+
+## tasks テーブル
+
+| Column        | Type       | Options                        |
+| ------------- | ---------- | ------------------------------ |
+| title         | string     | null: false                    |
+
+
+### Association
+
+belongs_to : user
