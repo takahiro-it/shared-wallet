@@ -1,0 +1,30 @@
+<h1>予算入力画面</h1>
+<%= form_with url: "/budgets/create", local: true do |f| %>
+
+  <%# <div class="weight-bold-text">食費<p><%= f.text_field :food_expenses, class:"input-default", id:"food_expenses", placeholder:"例) 10000" %></p>
+  <%# </div>  %>
+
+  <%# <div class="weight-bold-text">外食費<p><%= f.text_field :dining_expenses, class:"input-default", id:"dining_expenses", placeholder:"例) 10000" %></p> 
+  <%# </div>  %>
+
+  <%# <div class="weight-bold-text">日用品<p><%= f.text_field :daily_necessities, class:"input-default", id:"daily_necessities", placeholder:"例) 10000" %></p> 
+  <%# </div> %> 
+
+
+  <div class="mb-3">
+  <label for="formGroupExampleInput" class="form-label">食費</label>
+  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="例) 10000">
+</div>
+<div class="mb-3">
+  <label for="formGroupExampleInput2" class="form-label">外食費</label>
+  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="例) 10000">
+</div>
+<div class="mb-3">
+  <label for="formGroupExampleInput2" class="form-label">日用品</label>
+  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="例) 10000">
+</div>
+<br>
+
+<p><%= f.submit "予算を保存", class:"btn btn-outline-primary" %></p>
+
+<% end %>

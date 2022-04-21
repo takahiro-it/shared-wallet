@@ -1,5 +1,44 @@
 <h1>残高確認画面</h1>
+<link href="wallets.scss" rel="stylesheet">
 
-<p><%= link_to "買い物リスト", "/tasks/" %></p>
-<p><%= link_to "予算入力", "/budgets/" %></p>
-<p><%= link_to "支出入力", "/spendings/" %></p>
+<ul>
+<%= link_to image_tag("syokuhi.jpeg"), style:"pointer-events: none;" %>
+<%= link_to image_tag("gaisyoku.jpeg"), style:"pointer-events: none;" %>
+<%= link_to image_tag("nitiyouhin.jpeg"), style:"pointer-events: none;" %>
+</ul>
+
+<div class="container">
+  <div class="row">
+    <div class="col order-last">
+      日用品
+    </div>
+    <div class="col">
+      外食費
+    </div>
+    <div class="col order-first">
+      食費
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<footer>
+<div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+<p><%= link_to "支出入力", "/spendings/", class:"btn btn-outline-primary" %></p>
+&ensp; 
+<p><%= link_to "今月の予算", "/budgets/", class:"btn btn-outline-primary" %></p>
+&ensp; 
+<p><%= link_to "買い物リスト", "/tasks/", class:"btn btn-outline-primary" %></p>
+</div>
+</footer>
+
