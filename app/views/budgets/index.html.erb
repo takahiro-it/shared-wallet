@@ -1,1 +1,6 @@
-<h1>予算入力画面</h1>
+<%= link_to "今月の予算を設定", "/budgets/new", class:"btn btn-primary", id:"create-new-task" %>
+<h3> 【今月の設定予算】 </h3>
+
+<% @budgets.each do |budget| %> 
+  <p>・<%= budget.title %></p>
+<% end %>
