@@ -1,4 +1,15 @@
 <h1>残高確認画面</h1>
+<link href="wallets.scss" rel="stylesheet">
+<%# <ul>
+  <li><img src="stylsheet/images/syokuhi.jpeg" width="300" height="200" alt=""></li>
+  <li><img src="image2.jpg" width="300" height="200" alt=""></li>
+  <li><img src="image3.jpg" width="300" height="200" alt=""></li>
+</ul>
+<style>
+  li {
+    list-style: none;
+  }
+</style> %>
 
 <div class="container">
   <div class="row">
@@ -25,6 +36,7 @@
 <br>
 <br>
 <br>
+<footer>
 <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
 <p><%= link_to "支出入力", "/spendings/", class:"btn btn-outline-primary" %></p>
 &ensp; 
@@ -32,5 +44,5 @@
 &ensp; 
 <p><%= link_to "買い物リスト", "/tasks/", class:"btn btn-outline-primary" %></p>
 </div>
-
+</footer>
 
