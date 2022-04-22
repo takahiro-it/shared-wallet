@@ -6,18 +6,33 @@
   <label for="formGroupExampleInput" class="form-label">値段</label>
   <input type="text" class="form-control" id="formGroupExampleInput" placeholder="例) 10000">
 </div>
-<div class="mb-3">
+
+<p>カテゴリー</p>
+<select class="form-select" aria-label="Default select example">
+  <option selected>カテゴリーを選択</option>
+  <option value="1">食費</option>
+  <option value="2">外食費</option>
+  <option value="3">日用品</option>
+</select>
+
+<%# <div class="mb-3">
   <label for="formGroupExampleInput2" class="form-label">カテゴリー</label>
   <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="例) スーパー">
-</div>
+</div> %>
 <div class="mb-3">
   <label for="formGroupExampleInput" class="form-label">日付</label>
   <input type="text" class="form-control" id="formGroupExampleInput" placeholder="例) 0/00">
 </div>
-<div class="mb-3">
+
+<p>メモ欄</p>
+<div class="form-floating">
+  <textarea class="form-control" placeholder="memo" id="floatingTextarea2" style="height: 100px"></textarea>
+  <label for="floatingTextarea2">memo</label>
+</div>
+<%# <div class="mb-3">
   <label for="formGroupExampleInput2" class="form-label">メモ</label>
   <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="例) memo">
-</div>
+</div> %>
 
 <p><%= f.submit "支出を保存", class:"btn btn-outline-primary" %></p>
 
