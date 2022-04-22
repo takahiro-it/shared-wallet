@@ -1,1 +1,24 @@
 <h1>支出入力画面</h1>
+
+<%= form_with url: "/spendings/create", local: true do |f| %>
+
+<div class="mb-3">
+  <label for="formGroupExampleInput" class="form-label">値段</label>
+  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="例) 10000">
+</div>
+<div class="mb-3">
+  <label for="formGroupExampleInput2" class="form-label">カテゴリー</label>
+  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="例) スーパー">
+</div>
+<div class="mb-3">
+  <label for="formGroupExampleInput" class="form-label">日付</label>
+  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="例) 0/00">
+</div>
+<div class="mb-3">
+  <label for="formGroupExampleInput2" class="form-label">メモ</label>
+  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="例) memo">
+</div>
+
+<p><%= f.submit "支出を保存", class:"btn btn-outline-primary" %></p>
+
+<% end %>

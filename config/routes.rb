@@ -8,6 +8,8 @@ Rails.application.routes.draw do
 
 
   get "spendings" => "spendings#index"
+  get "spendings/new" => "spendings#new"
+  post "spendings/create" => "spendings#create"
 
   get "tasks" => "tasks#index"
   get "tasks/new" => "tasks#new"
