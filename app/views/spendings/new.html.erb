@@ -3,11 +3,11 @@
 <%= form_with url: "/spendings/create", local: true do |f| %>
 
 <div class="mb-3">
-  <label for="formGroupExampleInput" class="form-label">値段</label>
+  <label for="formGroupExampleInput" class="form-label">■値段</label>
   <input type="text" class="form-control" id="formGroupExampleInput" placeholder="例) 10000">
 </div>
-
-<p>カテゴリー</p>
+<br>
+<p>■カテゴリー</p>
 <select class="form-select" aria-label="Default select example">
   <option selected>カテゴリーを選択</option>
   <option value="1">食費</option>
@@ -19,15 +19,16 @@
   <label for="formGroupExampleInput2" class="form-label">カテゴリー</label>
   <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="例) スーパー">
 </div> %>
+
 <div class="mb-3">
-  <label for="formGroupExampleInput" class="form-label">日付</label>
+  <label for="formGroupExampleInput" class="form-label">■日付</label>
   <input type="text" class="form-control" id="formGroupExampleInput" placeholder="例) 0/00">
 </div>
-
-<p>メモ欄</p>
+<br>
+<p>■メモ欄</p>
 <div class="form-floating">
   <textarea class="form-control" placeholder="memo" id="floatingTextarea2" style="height: 100px"></textarea>
-  <label for="floatingTextarea2">memo</label>
+  <%# <label for="floatingTextarea2">memo</label> %>
 </div>
 <%# <div class="mb-3">
   <label for="formGroupExampleInput2" class="form-label">メモ</label>
