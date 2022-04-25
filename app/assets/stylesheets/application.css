@@ -15,7 +15,12 @@
  */
 
  .navbar-brand {
-  font-size: 30px;
+  font-size:30px;
+	text-align:center;
+	line-height:0.95em;
+	font-weight:bold;
+	color: blue;
+	text-shadow: 0 0 0.2em #FFF;
   margin: 0px 0px 0px 50px;
  }
 
