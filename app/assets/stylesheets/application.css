@@ -16,4 +16,10 @@
 
  .navbar-brand {
   font-size: 30px;
+  margin: 0px 0px 0px 50px;
  }
+
+ .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+  color: #2C7CFF;
+  
+}
